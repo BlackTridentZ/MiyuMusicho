@@ -1,0 +1,14 @@
+{
+	"keys" : {
+		"discord"    : "",
+		"youtube"    : "AIzaSyDoOjDIoQwdvbXZL5hfwSbUR_QLnAQGSfM"
+	},
+	"options" : {
+		"embedColour" : 2003199,
+		"prefix"      : "my!"
+	},
+	"prop" : {
+		"owners"   : ["304377187057008645"],
+		"blocked"  : []
+	}
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Miyuki",
+  "version": "0.8.2",
+  "description": "MusicBot BLABLLAND",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd src && node ./Miyuki.js"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "author": "ItzMeDwii",
+  "license": "MIT",
+  "dependencies": {
+    "buffered2": "^1.0.0",
+    "cpu-stat": "^2.0.1",
+    "dotenv": "^6.2.0",
+    "eris": "abalabahaha/eris#dev",
+    "eris-sharder": "^1.7.10",
+    "express": "^4.16.4",
+    "ffmpeg-binaries": "^4.0.0",
+    "fs": "0.0.1-security",
+    "node-opus": "^0.3.1",
+    "node-spotify-api": "^1.0.7",
+    "node-superfetch": "^0.1.9",
+    "os": "^0.1.1",
+    "snekfetch": "^4.0.4",
+    "superagent": "^4.0.0",
+    "ytdl-core": "^0.28.2"
+  }
+}
