@@ -14,14 +14,6 @@ const client = new Client(require('./src/config.json'), {
 
 client.on('ready', async () => {
     client.log('INFO', `Ready! (User: ${client.user.username})`);
-  const snekfetch = require('snekfetch');
-const key = process.env.DB_TOKEN;
-
-snekfetch.post(`https://discord.bots.gg/api/v1/bots/481637959393869824/stats`)
-    .set('Authorization', key)
-    .send({ "guildCount": client.guilds.size })
-    .then(() => console.log(`Server count posted! DiscordBots.`))
-    .catch((e) => console.error(e));
 });
 
 /*client.on('guildCreate', async (g) => {
@@ -36,14 +28,7 @@ client.on('guildDelete', async (g) => {
 
 client.on('messageCreate', async (msg) => {
   	    const DEFAULTPREFIX = 'my!';
-
-let prefixes = JSON.parse(fs.readFileSync("../miyuki-primary/prefixes.json", "utf8"));
-  if(!prefixes[msg.channel.guild.id]){
-    prefixes[msg.channel.guild.id] = {
-      prefixes: DEFAULTPREFIX
-    };
-  }
-  let prefix = prefixes[msg.channel.guild.id].prefixes;
+  let prefix = DEFAULTPREFIX;
  
    // var prefixes = "my!";
     client.prefix = prefix
