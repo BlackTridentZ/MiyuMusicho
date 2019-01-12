@@ -16,7 +16,7 @@ class MiyukiClient extends Client {
             clientOptions.disableEvents = extras.disable(clientOptions.disableEvents);
         }
 
-        super(process.env.SECRET, clientOptions);
+        super(config.keys.discord, clientOptions);
         
         this.EmbedUp = require('./EmbedUp.js')
         this.util = require('./util.js')
